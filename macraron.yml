@@ -1,0 +1,16 @@
+firefox:
+  new_tab: [^l, 's', 'v', 't', '.', 's', 'e', \n] 
+
+python:
+  conda:
+    show: conda env list
+    activate: conda activate ENV
+
+linux:
+  show:
+    ip: ip -c -brief a
+    ports: netstat -tunalp
+  generate:
+    password: openssl rand -base64 12
+  access:
+    sudo: usermod -aG sudo USER
